@@ -1,7 +1,8 @@
-# CMSC426FinalProjectReport
-## RonakAgarwal
+# Visual Odometry Project
 
-### Steps
+This project involves processing a sequence of frames captured by a camera mounted in a car (Oxford_dataset_reduced). The camera's intrinsic parameters are extracted using a provided script. The sequence of frames is then used to perform a series of operations that include identifying shared keypoints across frames, estimating the fundamental and essential matrices between frames, and decomposing the essential matrices into translation and rotation parameters. The final step of the project is to reconstruct and visualize the 3D trajectory of the camera. This process effectively maps the camera's path, providing a detailed view of its journey.
+
+## Steps
 
 #### 1
 Used the ReadCameraModel function to import the model, using fx, fy, cx, and cy to create the intrinsic matrix as a numpy array.
@@ -42,3 +43,6 @@ Computed the inverse of the transformation matrix and mulitplied the inverse tra
 Appended the X, Y, and Z coordinates of the camera center position to the respective lists. And graphed.
 
 ### 2D and 3D Projection Results
+
+![2D Projection](2d.png "2d projection")
+![3D Projection](3d.png "3d projection")
